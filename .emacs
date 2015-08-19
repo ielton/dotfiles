@@ -61,7 +61,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (custom-set-faces
- '(default ((t (:foreground "white" :background "black" :family "Fixed"))))
+ '(default ((t (:foreground "white" :background "black" :family "Fixed" :height 200))))
  '(fg:black ((t (:foreground "black" :background "black"))) t)
  '(custom-variable-sample-face ((t (:foreground "tan"))))
 ;; Just for comments
