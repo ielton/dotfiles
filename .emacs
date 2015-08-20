@@ -1,14 +1,14 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;  .emacs for Emacs 24  :  Ielton Ferreira Carneiro Pinto  <ieltonf@gmail.com>  ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
+ 
 ;; Some reminders: http://www.emacswiki.org/emacs/EmacsNewbieKeyReference
-
+  
 (setq toggle-text-mode-auto-fill "y")
-
+ 
 ;; Aspell
 (require 'ispell)
-
+ 
 ;; aspell path for ubuntu
 (setq-default ispell-program-name "/usr/bin/aspell")
 
@@ -72,18 +72,20 @@
  '(font-lock-keyword-face ((t (:foreground "green2" :background "black"))) t)
  '(custom-saved-face ((t (:underline t :foreground "tan"))))
  '(isearch ((t (:foreground "red" :background "black"))) t)
- '(primary-selection ((t (:foreground "gray70" :background "gray20"))) t)
  '(paren-match ((t (:foreground "red" :background "black"))) t)
  '(custom-face-empty ((t (:foreground "orange" :background "black"))) t)
  '(font-lock-preprocessor-face ((t (:foreground "tan"))) t)
- '(zmacs-region ((t (:foreground "gray90" :background "gray20"))) t)
+ '(zmacs-region ((t (:foreground "gray20" :background "gray20"))) t)
  '(font-lock-type-face ((t (:foreground "yellow" :background "black"))) t)
 ;; Just for Highlight
  '(highlight ((t (:foreground "white" :background "blue"))))
+;; Colors for Marks
+ '(region ((t (:bold t :foreground "white" :background "orange2"))))
  '(font-lock-variable-name-face ((t (:foreground "yellow" :background "black"))) t)
  '(font-lock-doc-string-face ((t (:foreground "gray50" :background "black"))) t)
  '(font-lock-function-name-face ((t (:bold nil :foreground "green" :background "black"))) t)
- '(bold-italic ((t (:bold t :italic t))))
- '(secondary-selection ((t (:foreground "orange2" :background "gray20"))))
- '(text-cursor ((t (:foreground "black" :background "green"))) t))
-(custom-set-faces)
+ '(bold-italic ((t :bold ( t :italic t))))
+ '(primary-selection ((t (:foreground "grey70" :background "orange2"))) t)
+ '(secondary-selection ((t (:foreground "orange2" :background "grey20"))))
+  '(text-cursor ((t (:foreground "black" :background "green"))) t))
+(custom-set-faces) 
